@@ -63,43 +63,80 @@ nav a {
 }
 
 caption {
+  font-family: "Jim Nightshade", cursive;
   padding-top: 8px;
   font-size: 3em;
   margin-bottom: 10px;
   color: rgba(0, 255, 26, 1);
 }
 
-table {
-  width: 80%;
-}
-
 td {
-  font-size: 1.3em;
+  font-family: "Gwendolyn", cursive;
   display: block;
   padding: 8px;
   margin-bottom: 5px;
   color: rgba(250, 255, 0, 1);
 }
 
-.table {
+table {
+  width: 80%;
+}
+
+.table caption {
   text-align: center;
+}
+
+.table td {
+  text-align: left;
+  font-size: 3em;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 5px;
+  color: rgba(250, 255, 0, 1);
+  position: relative;
+}
+
+.table td img {
+  margin-right: 10px;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
   position: relative;
 }
 
 .texto {
   position: absolute;
-  top: 250px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 10%);
   color: greenyellow;
 }
 
-.table img {
+.texto p {
+  font-size: 30px;
+  color: red;
+}
+
+.table {
+  background-image: url(svg/buda.svg);
+  background-repeat: no-repeat;
+  height: 1752px;
+  width: 1181px;
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   z-index: -1;
+}
+
+.heart {
+  background-color: greenyellow;
 }
 
 .images {
@@ -117,3 +154,4 @@ footer {
 .facebook {
   padding-left: 100px;
 }
+
